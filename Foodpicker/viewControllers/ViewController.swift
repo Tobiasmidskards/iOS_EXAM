@@ -21,27 +21,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupStyles()
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            self.styleLoginState(logged_id: user != nil)
+        }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        Auth.auth().addStateDidChangeListener { (auth, user) in
-            if user != nil {
-                self.logoutButton.isHidden = false
-                self.dashboardButton.isHidden = false
-                
-                self.loginButton.isHidden = true
-                self.registerButton.isHidden = true
-                print("logged in")
-            } else {
-                self.logoutButton.isHidden = true
-                self.dashboardButton.isHidden = true
-                
-                self.loginButton.isHidden = false
-                self.registerButton.isHidden = false
-                print("logged out")
-                return
-            }
-        }
+    func styleLoginState(logged_id : Bool) {
+        self.logoutButton.isHidden = !logged_id
+        self.dashboardButton.isHidden = !logged_id
+        
+        self.loginButton.isHidden = logged_id
+        self.registerButton.isHidden = logged_id
     }
     
     func setupStyles() {

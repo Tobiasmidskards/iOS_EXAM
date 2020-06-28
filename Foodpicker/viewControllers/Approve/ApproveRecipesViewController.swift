@@ -104,9 +104,11 @@ extension ApproveRecipesViewController : UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! UnapprovedCell
         
-        cell.textLabel?.text = recipes[indexPath.row].name
+        cell.nameLabel?.text = recipes[indexPath.row].name
+        
+        cell.linkLabel?.text = recipes[indexPath.row].link
         
         return cell
     }

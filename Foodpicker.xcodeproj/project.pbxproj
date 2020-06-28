@@ -23,6 +23,7 @@
 		CB43143E24A57B660091D0EE /* ShowStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB43143D24A57B660091D0EE /* ShowStyleViewController.swift */; };
 		CB440F1624A8A83C00BE5B37 /* ApproveRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB440F1524A8A83C00BE5B37 /* ApproveRecipesViewController.swift */; };
 		CB440F1C24A8B22700BE5B37 /* ShowApproveRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB440F1B24A8B22700BE5B37 /* ShowApproveRecipeViewController.swift */; };
+		CB440F1F24A8DD4A00BE5B37 /* UnapprovedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB440F1E24A8DD4A00BE5B37 /* UnapprovedCell.swift */; };
 		CB44C77F24A6270B00A69FB9 /* ShowRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C77E24A6270B00A69FB9 /* ShowRecipeViewController.swift */; };
 		CB44C78124A6284900A69FB9 /* NewRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44C78024A6284900A69FB9 /* NewRecipeViewController.swift */; };
 		CBB45A8A24A490010024EBA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB45A8924A490010024EBA0 /* AppDelegate.swift */; };
@@ -75,6 +76,7 @@
 		CB43143D24A57B660091D0EE /* ShowStyleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowStyleViewController.swift; sourceTree = "<group>"; };
 		CB440F1524A8A83C00BE5B37 /* ApproveRecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApproveRecipesViewController.swift; sourceTree = "<group>"; };
 		CB440F1B24A8B22700BE5B37 /* ShowApproveRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowApproveRecipeViewController.swift; sourceTree = "<group>"; };
+		CB440F1E24A8DD4A00BE5B37 /* UnapprovedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnapprovedCell.swift; sourceTree = "<group>"; };
 		CB44C77E24A6270B00A69FB9 /* ShowRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowRecipeViewController.swift; sourceTree = "<group>"; };
 		CB44C78024A6284900A69FB9 /* NewRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeViewController.swift; sourceTree = "<group>"; };
 		CBB45A8624A490010024EBA0 /* Foodpicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodpicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,6 +295,7 @@
 				CBB45AC024A498B60024EBA0 /* Style.swift */,
 				CB43142D24A4BD820091D0EE /* Utilities.swift */,
 				CB43142F24A4BDB40091D0EE /* Constants.swift */,
+				CB440F1E24A8DD4A00BE5B37 /* UnapprovedCell.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				CBB45AC124A498B60024EBA0 /* Style.swift in Sources */,
 				CB43142E24A4BD820091D0EE /* Utilities.swift in Sources */,
 				CBB45ABE24A494330024EBA0 /* HomeViewController.swift in Sources */,
+				CB440F1F24A8DD4A00BE5B37 /* UnapprovedCell.swift in Sources */,
 				CB44C77F24A6270B00A69FB9 /* ShowRecipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -99,7 +99,7 @@ extension RecipesViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc = storyboard?.instantiateViewController(identifier: "ShowRecipeVC") as! ShowRecipeViewController
+        let vc = storyboard?.instantiateViewController(identifier: Constants.StoryBoard.showRecipeViewController) as! ShowRecipeViewController
         
         vc.recipe = recipes[indexPath.row]
         
